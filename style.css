@@ -5,7 +5,7 @@ body, html {
   color: black;
 }
 body {
-  background: url(./images/bg.png) no-repeat center center fixed ;
+  background: url(./images/bg.svg) no-repeat center center fixed ;
 
   background-size: cover;
   
