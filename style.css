@@ -1,0 +1,102 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+body {
+  background: url(./images/bg.png) no-repeat center center fixed ;
+
+  background-size: cover;
+  
+}
+
+
+.animated{
+  padding: 50px;
+}
+#vanta {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+main {
+  position: relative;
+}
+
+main.animated {
+  opacity: 0;
+  filter: blur(10px);
+  transition: opacity 1s ease-in-out, filter 1s ease-in-out;
+}
+
+header {
+  margin-top: 3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  box-shadow: #1c205d3d 0px 2px 8px 0px;
+}
+
+header > h1 {
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-radius: 1em;
+  background-color: #000a;
+  color: #fff;
+  padding: 0.3em 0.6em;
+  border: 1px solid #fffa;
+  backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+}
+
+ul {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 480px;
+}
+
+ul > li {
+  background-color: #FCA311;
+  backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+  border-radius: 1rem;
+  padding: 1em;
+  margin: 1.4em 0;
+  box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
+  transition: 0.2s;
+}
+ul > li:hover{
+  filter: brightness(0.9);
+}
+
+ul > li > a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+a {
+  color: #003B70;
+  font-weight: 600;
+  text-decoration: none;
+}
